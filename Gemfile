@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'pg'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -38,10 +38,6 @@ end
 
 group :test do
   gem 'capybara', '1.1.2'
-end
-
-group :prodution do
-  gem 'pg', '~> 0.12.2'
 end
 
 # Use ActiveModel has_secure_password
