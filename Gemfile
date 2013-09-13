@@ -5,6 +5,10 @@ gem 'rails', '4.0.0'
 
 gem 'bootstrap-sass'
 
+gem 'protected_attributes'
+
+gem 'bcrypt-ruby', '3.0.1'
+
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 
@@ -33,6 +37,8 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
+gem 'annotate'
 
 group :development, :test do
   gem 'rspec-rails', '2.11.0'
