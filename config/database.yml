@@ -40,3 +40,4 @@ test:
   adapter: postgresql
   database: sample_test
   username: dev
+  pool: 5
