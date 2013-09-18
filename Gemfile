@@ -41,16 +41,15 @@ end
 gem 'annotate'
 
 group :development, :test do
-  gem 'rspec-rails', '2.11.0'
+  gem 'rspec-rails'
+  gem 'cucumber-rails', :require => false
 end
 
 
 group :test do
   gem 'capybara', '1.1.2'
 
-  gem 'factory_girl_rails', "~> 4.0"
-
-  gem 'cucumber-rails'
+  gem 'factory_girl_rails'
 
   gem 'database_cleaner'
 end
