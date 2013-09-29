@@ -9,6 +9,12 @@ gem 'protected_attributes'
 
 gem 'bcrypt-ruby', '3.0.1'
 
+gem 'faker'
+
+gem 'will_paginate'
+
+gem 'bootstrap-will_paginate'
+
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 
