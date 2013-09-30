@@ -119,7 +119,7 @@ describe "User Pages" do
 
       describe "as anadmin user" do
 
-        let(:admin) { FactoryGirl.create(:user) }
+        let(:admin) { FactoryGirl.create(:admin) }
 
         before do
           sign_in admin

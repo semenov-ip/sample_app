@@ -86,7 +86,7 @@ describe "AuthenticationPages" do
 
 
         describe "visiting the user index" do
-          before {visit user_path}
+          before {visit users_path}
           it { should have_selector('title', text: 'Sign in') }
         end
       end
@@ -102,8 +102,8 @@ describe "AuthenticationPages" do
       end
 
       describe "submitting a PUT request to the Users#update action" do
-        before { put user_path(wrong_user) }
-        specify { response.should redirect_to(root_path) }
+        before { put user_path(user) }
+        specify { expect(response).to redirect_to(signin_path) }
       end
     end
 
